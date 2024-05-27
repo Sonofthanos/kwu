@@ -1,0 +1,110 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #06141e;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #0ef;
+    margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: block;
+    background-color: #002742;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #0ef;
+    color: #06141e;
+    transition: linear;
+    transition-duration: 1ms;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item-box {
+    border: 1px solid #0ef;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #0e2231;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Menambahkan transisi untuk transformasi dan perubahan warna */
+    position: relative;
+    border-radius: 10px;
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur tata letak kolom */
+    justify-content: space-between; 
+    /* Menempatkan konten pada awal dan akhir kotak */
+}
+
+.item-box:hover {
+    background-color: #06141e; /* Mengubah warna latar belakang saat hover */
+    transform: scale(1.05);
+    backdrop-filter: blur(8px); /* Memperbesar kotak saat hover */
+}
+
+.item-price {
+    font-weight: bold;
+    color: #0ef;
+    margin-top: auto; /* Menempatkan teks harga di bagian bawah */
+}
+
+
+.item-info {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Gaya untuk teks yang muncul saat dihover */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.item-box:hover .hover-text {
+    display: block;
+}
+
+.kanan{
+    float: right;
+}
+
